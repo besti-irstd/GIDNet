@@ -17,7 +17,7 @@ os.environ['CUDA_VISIBLE_DEVICES']="0"
 def parse_args():
     parser = ArgumentParser(description='Implement of model')
 
-    parser.add_argument('--dataset-dir', type=str, default='C:\\Users\\wujingtao\\Desktop\\GIDNet\\datasets\\IRSTD-1k')
+    parser.add_argument('--dataset-dir', type=str, default='/root/GIDNet/datasets/IRSTD-1K')
     parser.add_argument('--batch-size', type=int, default=4)
     parser.add_argument('--epochs', type=int, default=800)
     parser.add_argument('--lr', type=float, default=0.05)
@@ -32,7 +32,7 @@ def parse_args():
     parser.add_argument('--use-dhpf', type=int, default=0, help='Set to 0 to disable DHPF module')
 
     parser.add_argument('--mode', type=str, default='train')
-    parser.add_argument('--weight-path', type=str, default='C:\\Users\\wujingtao\\Desktop\\GIDNet\\weight_passage\\IRSTD-1K\weight.pkl')
+    parser.add_argument('--weight-path', type=str, default='/root/GIDNet/weight/')
 
     args = parser.parse_args()
     return args
@@ -83,7 +83,7 @@ class Trainer(object):
                 self.best_iou = checkpoint['iou']
                 self.save_folder = check_folder
             else:
-                self.save_folder = 'C:\\Users\\wujingtao\\Desktop\\GIDNet\\weight\\GIDNet-%s'%(time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time())))
+                self.save_folder = '/root/GIDNet/weight/GIDNet-%s'%(time.strftime('%Y-%m-%d-%H-%M-%S',time.localtime(time.time())))
                 if not osp.exists(self.save_folder):
                     os.mkdir(self.save_folder)
         if args.mode=='test':
