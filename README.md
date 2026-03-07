@@ -20,9 +20,9 @@ python main.py --dataset-dir './dataset/IRSTD-1k' --batch-size 1 --mode 'test' -
 # Quantative Results
 | Dataset    | mIoU (x10(-2)) | Pd (x10(-2)) | Fa (x10(-6)) |                                               Weights                                               |
 | ---------- | :------------: | :----------: | :----------: | :-------------------------------------------------------------------------------------------------: |
-| IRSTD-1k   |     69.01      |    93.54     |     10.32     |  [IRSTD-1k]()  |
-| NUAA-SIRST |     78.16      |     100      |     6.74     | [NUAA-SIRST]() |
-| NUDT-SIRST |     83.51      |    98.41     |     2.80     | [NUDT-SIRST]() |
+| IRSTD-1k   |     69.01      |    93.54     |     10.32     |  [IRSTD-1k](https://pan.baidu.com/s/1wl_kHziC1G809IamR-Q0HQ?pwd=idnx 提取码: idnx) |
+| NUAA-SIRST |     78.16      |     100      |     6.74     | [NUAA-SIRST](https://pan.baidu.com/s/1BpFqGkcfEln75e8JMTnDHQ?pwd=q4yg 提取码: q4yg) |
+| NUDT-SIRST |     83.51      |    98.41     |     2.80     | [NUDT-SIRST](https://pan.baidu.com/s/1C0nP7LgRRYVQJB_Z6FM_Jw?pwd=45rj 提取码: 45rj  |
 # Loss
 * GIDNet employs the SLS loss and further improves the network architecture based on [MSHNet](https://github.com/Lliu666/MSHNet). Thanks to Qiankun Liu.
 # Citation
