@@ -14,7 +14,7 @@ The training command is very simple like this:
 python main --dataset-dir --batch-size --epochs --mode 'train'
 For example:
 python main.py --dataset-dir './dataset/IRSTD-1k' --batch-size 4 --epochs 800 --mode 'train'
-The division of the training and test sets follows the data partitioning scheme established in HDNet(https://github.com/xumingzhu989/HDNet-TGRS).
+The division of the training and test sets follows the data partitioning scheme established in HDNet(https://github.com/xumingzhu989/HDNet-TGRS). Thanks to Mingzhu Xu.
 # Testing
 You can test the model with the following command:
 python main.py --dataset-dir './dataset/IRSTD-1k' --batch-size 1 --mode 'test' --weight-path './weight/irstd.pkl'
