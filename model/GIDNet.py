@@ -47,7 +47,7 @@ class GISC(nn.Module):#这里并没有启动偏置，
 
         # 4. 加权融合
         return out_normal * (1 - self.theta) + out_diff * self.theta
-
+#通道注意力
 class ChannelAttention(nn.Module):
     def __init__(self, in_planes, ratio=16):
         super(ChannelAttention, self).__init__()
@@ -62,7 +62,7 @@ class ChannelAttention(nn.Module):
         max_out = self.fc2(self.relu1(self.fc1(self.max_pool(x))))
         out = avg_out + max_out
         return self.sigmoid(out)
-
+#空间注意力
 class SpatialAttention(nn.Module):
     def __init__(self, kernel_size=7):
         super(SpatialAttention, self).__init__()
