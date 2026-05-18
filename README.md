@@ -1,4 +1,6 @@
 # GIDNet: Infrared Small Target Detection Network Based on  Gradient-Intensity Decoupled
+The source code of the MDPI Remote Sensing, GIDNet: Infrared Small Target Detection Network Based on  Gradient-Intensity Decoupled.
+
 This repository contains the official PyTorch implementation of GIDNet, a deep learning model designed for Infrared Small Target Detection (IRSTD). GIDNet leverages spatial domain enhancements, utilizing generalized central difference convolution (GISC), multi-scale dilated convolution (MSDC) and shallow feature projection (SFP) strategy to effectively capture the structural edge information of small infrared targets. 
 # Prerequisites
 requirements.txt
