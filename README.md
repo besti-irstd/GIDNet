@@ -2,6 +2,17 @@
 The source code of the MDPI Remote Sensing, GIDNet: Infrared Small Target Detection Network Based on  Gradient-Intensity Decoupled.
 
 This repository contains the official PyTorch implementation of GIDNet, a deep learning model designed for Infrared Small Target Detection (IRSTD). GIDNet leverages spatial domain enhancements, utilizing generalized central difference convolution (GISC), multi-scale dilated convolution (MSDC) and shallow feature projection (SFP) strategy to effectively capture the structural edge information of small infrared targets. 
+# Architecture
+<img width="5147" height="3823" alt="overall" src="https://github.com/user-attachments/assets/161cc6fe-8bb9-4ca2-8dd9-2ee6ab79e788" />
+
+<img width="7348" height="3791" alt="GISC" src="https://github.com/user-attachments/assets/10bb62aa-7621-4b58-a1d1-38023938a49a" />
+
+<img width="8000" height="5281" alt="MSDC" src="https://github.com/user-attachments/assets/c698d020-7956-4589-b683-52a3c39c7bcf" />
+
+
+
+
+
 # Prerequisites
 requirements.txt
 # Datasets
@@ -20,12 +31,17 @@ The division of the training and test sets follows the data partitioning scheme 
 # Testing
 You can test the model with the following command:
 python main.py --dataset-dir './dataset/IRSTD-1k' --batch-size 1 --mode 'test' --weight-path './weight/irstd.pkl'
-# Quantative Results
+# Results
 | Dataset    | mIoU (x10(-2)) | Pd (x10(-2)) | Fa (x10(-6)) |
 | ---------- | :------------: | :----------: | :----------: |
 | IRSTD-1k   |     69.01      |    93.54     |     10.32     |
 | NUAA-SIRST |     78.16      |     100      |     6.74     | 
 | NUDT-SIRST |     83.51      |    98.41     |     2.80     |
+<img width="6471" height="3612" alt="SOTA" src="https://github.com/user-attachments/assets/506c2b75-c4fd-4960-94df-68f1487c4928" />
+
+
+
+
 # Loss
 * GIDNet employs the SLS loss and further improves the network architecture based on [MSHNet](https://github.com/Lliu666/MSHNet). Thanks to Qiankun Liu.
 # Citation
